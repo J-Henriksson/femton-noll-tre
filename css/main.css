@@ -58,10 +58,8 @@
 /* ── Hero ────────────────────────────────────────────────── */
 
 .hero {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
