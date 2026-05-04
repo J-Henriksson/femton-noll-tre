@@ -7,13 +7,13 @@
 }
 
 :root {
-  --bg:           #0d0d0d;
-  --surface:      #181818;
-  --border:       #2a2a2a;
-  --text:         #ebebeb;
-  --text-muted:   #767676;
-  --accent:       #c0c0c0;
-  --accent-hover: #e0e0e0;
+  --bg:           #000000;
+  --surface:      #000000;
+  --border:       #333333;
+  --text:         #ffffff;
+  --text-muted:   #888888;
+  --accent:       #ffffff;
+  --accent-hover: #cccccc;
 
   --font-display: 'Barlow Condensed', system-ui, sans-serif;
   --font-body:    'Inter', system-ui, sans-serif;

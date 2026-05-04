@@ -12,7 +12,7 @@
 }
 
 .site-header.is-scrolled {
-  background: rgba(13, 13, 13, 0.88);
+  background: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -24,16 +24,39 @@
 }
 
 .header__logo {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.header__logo:hover {
+  opacity: 1;
+  color: inherit;
+}
+
+.header__logo-img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-muted);
   transition: color 0.15s;
 }
 
-.header__logo:hover {
+.header__nav-link:hover {
   color: var(--text);
 }
 
@@ -95,11 +118,47 @@
 }
 
 
+/* ── Film still ──────────────────────────────────────────── */
+
+.still-section {
+  border-top: 1px solid var(--border);
+}
+
+.still-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(15%);
+}
+
+
 /* ── Info section ────────────────────────────────────────── */
 
 .info-section {
   border-top: 1px solid var(--border);
+}
+
+.info-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60vh;
+}
+
+.info-split__image {
+  overflow: hidden;
+}
+
+.info-split__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.info-split__content {
   padding: 4rem 0;
+  border-left: 1px solid var(--border);
 }
 
 .info-grid {
@@ -236,6 +295,19 @@ blockquote.directors-quote {
 /* ── Responsive ──────────────────────────────────────────── */
 
 @media (max-width: 900px) {
+  .info-split {
+    grid-template-columns: 1fr;
+  }
+
+  .info-split__image {
+    max-height: 50vw;
+  }
+
+  .info-split__content {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
   .info-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;

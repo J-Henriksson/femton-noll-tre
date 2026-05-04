@@ -1,0 +1,198 @@
+/* ── Active nav link ─────────────────────────────────────── */
+
+.header__nav-link--active {
+  color: var(--text);
+}
+
+
+/* ── Form page layout ────────────────────────────────────── */
+
+.form-main {
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.form-main .container {
+  display: block;
+}
+
+.form-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-still {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: grayscale(20%);
+}
+
+.form-content {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ── Form typography ─────────────────────────────────────── */
+
+.form-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.form-intro {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  max-width: 52ch;
+}
+
+.form-intro__link {
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+
+.form-intro__link:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+
+/* ── Form fields ─────────────────────────────────────────── */
+
+.screening-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 480px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-label__hint {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.form-input {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.form-input:focus {
+  border-color: var(--text);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+
+/* ── Submit button ───────────────────────────────────────── */
+
+.form-submit {
+  align-self: flex-start;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  margin-top: 0.25rem;
+}
+
+.form-submit:hover {
+  background: var(--text-muted);
+}
+
+.form-submit:active {
+  background: #aaaaaa;
+}
+
+
+/* ── Status message ──────────────────────────────────────── */
+
+.form-status {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  min-height: 1.2em;
+}
+
+.form-status--success {
+  color: var(--text);
+}
+
+.form-status--error {
+  color: #cc4444;
+}
+
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .form-main .container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-hero {
+    max-height: 35vh;
+  }
+
+  .form-content {
+    padding: 3rem var(--container-pad);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .form-content {
+    padding: 2.5rem var(--container-pad);
+  }
+}
