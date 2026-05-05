@@ -26,11 +26,13 @@
 .header__logo:hover {
   opacity: 1;
   color: inherit;
+  filter: brightness(1.4);
 }
 
 .header__logo-img {
-  height: 2.5rem;
+  height: 3.25rem;
   width: auto;
+
 }
 
 .header__nav {
