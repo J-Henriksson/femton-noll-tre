@@ -112,6 +112,15 @@
 }
 
 
+/* ── Trailer ─────────────────────────────────────────────── */
+
+.trailer-section {
+  border-top: 1px solid var(--border);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
 /* ── Film still ──────────────────────────────────────────── */
 
 .still-section {
