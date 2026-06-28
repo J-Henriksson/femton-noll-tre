@@ -1,0 +1,127 @@
+/* ── Active nav link ─────────────────────────────────────── */
+
+.header__nav-link--active {
+  color: var(--text);
+}
+
+
+/* ── Info page layout ────────────────────────────────────── */
+
+.info-main {
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+
+/* ── Intro ───────────────────────────────────────────────── */
+
+.screenings-intro {
+  max-width: 60ch;
+  margin-bottom: 4rem;
+}
+
+.screenings-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.screenings-lead {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+
+/* ── Screening timeline ──────────────────────────────────── */
+
+.screening-timeline {
+  border-top: 1px solid var(--border);
+}
+
+.screening {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.screening__date {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0.4rem;
+}
+
+.screening__venue {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+
+.screening__place {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.screening__note {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text);
+  max-width: 55ch;
+}
+
+
+/* ── Outro ───────────────────────────────────────────────── */
+
+.screenings-outro {
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.screenings-outro__link {
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+
+.screenings-outro__link:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 700px) {
+  .info-main {
+    padding-top: 7rem;
+  }
+
+  .screening {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .screening__date {
+    padding-top: 0;
+  }
+}

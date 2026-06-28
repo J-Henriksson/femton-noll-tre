@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         visningar: resolve(__dirname, 'visningar.html'),
+        merInfo: resolve(__dirname, 'mer-info.html'),
       },
     },
   },

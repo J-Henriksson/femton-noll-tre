@@ -76,3 +76,7 @@ ul, ol {
   color: var(--text-muted);
   margin-bottom: 1.25rem;
 }
+
+.section-label--spaced {
+  margin-top: 2.5rem;
+}
