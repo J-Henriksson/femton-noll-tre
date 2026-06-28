@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institutionsvisning — FEMTON NOLL TRE</title>
+  <meta name="description" content="Visa Femton noll tre inom din institution. Fyll i formuläret och få filmlänken automatiskt via mail." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/visningar.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header__inner container">
+      <a class="header__logo" href="/femton-noll-tre/">
+        <img class="header__logo-img" src="assets/logo.png" alt="Femton noll tre" />
+      </a>
+      <nav class="header__nav">
+        <a class="header__nav-link header__nav-link--active" href="visningar.html">Se filmen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-main">
+    <div class="container">
+
+      <a class="back-link" href="visningar.html">← Se filmen</a>
+
+      <div class="form-content">
+        <h1 class="form-title">Fyll i formuläret och få filmlänken automatiskt via mail.</h1>
+        <p class="form-intro">
+          Enskilda institutioner kan visa filmen gratis inom sin verksamhet. När du fyllt i
+          formuläret får du institutionell visningsrätt.<br />
+          Vill du använda filmen/materialet i större omfattning?
+          <a class="form-intro__link" href="mailto:info@folketsbio.se">Kontakta oss</a>
+        </p>
+
+        <form class="screening-form" id="screening-form" novalidate>
+
+          <div class="form-field">
+            <label class="form-label" for="name">Ditt namn</label>
+            <input class="form-input" type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="email">Din e-post <span class="form-label__hint">(länk till filmen kommer direkt)</span></label>
+            <input class="form-input" type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="org">Organisation</label>
+            <input class="form-input" type="text" id="org" name="org" autocomplete="organization" required />
+          </div>
+
+          <button class="form-submit" type="submit">Skicka</button>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">© 2026 Folkets Bio</span>
+      <span class="footer__film">Femton noll tre</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

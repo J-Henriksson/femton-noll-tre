@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Se filmen — FEMTON NOLL TRE</title>
-  <meta name="description" content="Fyll i formuläret och få filmlänken till Femton noll tre automatiskt via mail." />
+  <meta name="description" content="Se Femton noll tre på bio, hemma via streaming eller inom din institution." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/png" href="assets/logo.png" />
@@ -25,40 +25,36 @@
     </div>
   </header>
 
-  <main class="form-main">
+  <main class="hub-main">
     <div class="container">
 
-      <div class="form-content">
-        <h1 class="form-title">Fyll i formuläret och få filmlänken automatiskt via mail.</h1>
-        <p class="form-intro">
-          Enskilda institutioner kan visa filmen gratis inom sin verksamhet. När du fyllt i
-          formuläret får du institutionell visningsrätt.<br />
-          Vill du använda filmen/materialet i större omfattning?
-          <a class="form-intro__link" href="mailto:info@folketsbio.se">Kontakta oss</a>
-        </p>
+      <div class="hub-header">
+        <h1 class="hub-title">Se filmen</h1>
+      </div>
 
-        <form class="screening-form" id="screening-form" novalidate>
+      <div class="hub-grid">
 
-          <div class="form-field">
-            <label class="form-label" for="name">Ditt namn</label>
-            <input class="form-input" type="text" id="name" name="name" autocomplete="name" required />
-          </div>
+        <a class="hub-card" href="biografer.html">
+          <p class="hub-card__eyebrow">Kommande visningar</p>
+          <h2 class="hub-card__title">Biografer &amp; evenemang</h2>
+          <p class="hub-card__desc">Se var och när filmen visas på bio eller på evenemang nära dig.</p>
+          <span class="hub-card__arrow" aria-hidden="true">&rarr;</span>
+        </a>
 
-          <div class="form-field">
-            <label class="form-label" for="email">Din e-post <span class="form-label__hint">(länk till filmen kommer direkt)</span></label>
-            <input class="form-input" type="email" id="email" name="email" autocomplete="email" required />
-          </div>
+        <a class="hub-card" href="streama.html">
+          <p class="hub-card__eyebrow">Privat</p>
+          <h2 class="hub-card__title">Streama eller köp</h2>
+          <p class="hub-card__desc">Se filmen hemma via en av våra streaming- och försäljningsplattformar.</p>
+          <span class="hub-card__arrow" aria-hidden="true">&rarr;</span>
+        </a>
 
-          <div class="form-field">
-            <label class="form-label" for="org">Organisation</label>
-            <input class="form-input" type="text" id="org" name="org" autocomplete="organization" required />
-          </div>
+        <a class="hub-card" href="institutioner.html">
+          <p class="hub-card__eyebrow">Skolor &amp; organisationer</p>
+          <h2 class="hub-card__title">Institutionsvisning</h2>
+          <p class="hub-card__desc">Visa filmen inom din verksamhet. Fyll i formuläret och få länken direkt via mail.</p>
+          <span class="hub-card__arrow" aria-hidden="true">&rarr;</span>
+        </a>
 
-          <button class="form-submit" type="submit">Skicka</button>
-
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-
-        </form>
       </div>
 
     </div>
@@ -66,12 +62,11 @@
 
   <footer class="site-footer">
     <div class="container footer__inner">
-      <span class="footer__copy">© 2024 Folkets Bio</span>
+      <span class="footer__copy">© 2026 Folkets Bio</span>
       <span class="footer__film">Femton noll tre</span>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
 </body>
 </html>
