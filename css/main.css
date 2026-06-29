@@ -48,6 +48,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text);
+  white-space: nowrap;
   transition: color 0.15s;
 }
 
@@ -68,7 +69,7 @@
 
 .hero__video-wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin-inline: auto;
   padding-inline: var(--container-pad);
   aspect-ratio: 16 / 9;
@@ -77,7 +78,7 @@
 .hero__iframe {
   width: 100%;
   height: 100%;
-  border: none;
+  border: 1px solid var(--border);
 }
 
 .hero__title-block {
@@ -102,15 +103,6 @@
   line-height: 0.92;
 }
 
-.hero__timestamp {
-  font-family: var(--font-body);
-  font-size: clamp(0.9rem, 1.8vw, 1.25rem);
-  letter-spacing: 0.38em;
-  color: var(--text-muted);
-  margin-top: 0.6rem;
-  font-variant-numeric: tabular-nums;
-}
-
 
 /* ── Trailer ─────────────────────────────────────────────── */
 
@@ -118,20 +110,6 @@
   border-top: 1px solid var(--border);
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-
-/* ── Film still ──────────────────────────────────────────── */
-
-.still-section {
-  border-top: 1px solid var(--border);
-}
-
-.still-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: grayscale(15%);
 }
 
 
@@ -149,6 +127,12 @@
 
 .info-split__image {
   overflow: hidden;
+}
+
+.info-split__image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .info-split__image img {
@@ -323,6 +307,19 @@ blockquote.directors-quote {
 }
 
 @media (max-width: 600px) {
+  .header__logo-img {
+    height: 2.4rem;
+  }
+
+  .header__nav {
+    gap: 1.1rem;
+  }
+
+  .header__nav-link {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
   .credits-grid {
     grid-template-columns: 1fr;
     gap: 2rem;

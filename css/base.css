@@ -52,6 +52,11 @@ a:hover {
   color: var(--accent-hover);
 }
 
+:focus-visible {
+  outline: 1px solid var(--text);
+  outline-offset: 3px;
+}
+
 img, iframe, video {
   display: block;
   max-width: 100%;
